@@ -1,4 +1,4 @@
-package com.thch.toolapp;
+package io.ionic.starter;
 
 import com.getcapacitor.BridgeActivity;
 
