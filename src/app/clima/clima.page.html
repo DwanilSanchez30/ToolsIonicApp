@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Clima</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card class="custom-card">
+    <ion-item lines="none" class="custom-item">
+      <p>Clima actual</p>
+      <ion-label slot="end">{{ today }}</ion-label>
+    </ion-item>
+    <ion-item class="custom-temperature">
+      <span>{{ (weatherTemp?.temp - 273.15).toFixed(0) }}</span>
+      <span>º</span>
+      <ion-icon slot="end" name="{{ icon }}"></ion-icon>
+    </ion-item>
+    <ion-item class="custom-location">
+      <ion-icon name="location" class="custom-location-icon"></ion-icon>
+      <b>Santo Domingo</b>
+    </ion-item>
+  </ion-card>
+</ion-content>

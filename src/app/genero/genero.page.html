@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Genero</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <ion-card class="custom-card">
+    <img src="{{imgRoute}}" class="custom-image" width="100%" height="50" />
+    <ion-card-header>
+      <ion-card-title class="custom-title">Introduzca un nombre</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item class="custom-input-item">
+        <ion-input type="text" [(ngModel)]="nombre" class="custom-input" placeholder="Ingrese un nombre"></ion-input>
+      </ion-item>
+      <ion-button expand="block" shape="round" (click)="getGenero(nombre)" id="generoBtn" fill="outline" class="custom-button">Definir género</ion-button>
+    </ion-card-content>
+    <h1 class="custom-message">{{mensaje}}</h1>
+  </ion-card>
+</ion-content>

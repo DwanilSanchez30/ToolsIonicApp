@@ -1,0 +1,31 @@
+/* Estilos personalizados */
+.custom-card {
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 16px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .custom-input-item {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+  }
+  
+  .custom-button {
+    margin-top: 10px;
+    background-color: transparent;
+    color: #007bff;
+  }
+  
+  ion-input {
+    border: none;
+    border-bottom: 1px solid #007bff;
+  }
+  
+  ion-input::placeholder {
+    color: #ccc;
+  }
+  
